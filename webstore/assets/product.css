@@ -1,0 +1,87 @@
+* {
+    font-family: "Rubik", serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+.banner {
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+.logo {
+    padding: 24px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.logo > strong {
+    color: #E42217;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.logo > img {
+    display: inline;
+    width: 32px;
+    height: 32px;
+}
+
+section {
+    margin: 12px;
+}
+
+.gallery {
+    background-color: #E42217;
+}
+
+.gallery > img {
+    width: 400px;
+    height: 300px;
+}
+
+input, select {
+    display: block;
+    width: 500px;
+    margin: 8px;
+    padding: 12px;
+}
+
+.size-box {
+    overflow-y: auto;
+    border-style: solid;
+}
+
+.size-box > option {
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 12px;
+}
+
+.color-box {
+    overflow-y: auto;
+    border-style: solid;
+    height: 100%;
+}
+
+.color-box[multiple] {
+    height: 100%;
+}
+
+.color-box > option {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 12px;
+}
