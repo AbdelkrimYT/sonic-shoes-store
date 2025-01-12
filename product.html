@@ -226,6 +226,9 @@
 
   <script>
     const states = [];
+    const products = [];
+    const delivery_costs = [];
+
     let quantity = 1;
     const unit_price = 2300;
     let delivery_cost = {
@@ -238,7 +241,7 @@
     let total = delivery + (unit_price * quantity);
 
     axios.get('https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/states.json')
-        .then((response) => {
+        .then(response => {
             const state_select = document.getElementById('state');
             
             response.data.forEach(e => {
@@ -253,6 +256,17 @@
         }).catch((error) => {
             console.log(error);
         });
+
+    axios.get('https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product.json')
+        .then(response => {
+            response.data.forEach(e => {
+                products.push(e);
+            });
+        }).catch((error) => {
+            console.log(error);
+        });
+
+    console.log(products);
 
     document.getElementById('price').innerText = unit_price;
     document.getElementById('unit-price').innerText = unit_price;
