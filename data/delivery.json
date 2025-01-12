@@ -1,0 +1,408 @@
+[
+    {
+        "code": "01",
+        "price": {
+            "to_office": 970,
+            "to_home": 1300
+        }
+    },
+    {
+        "code": "02",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "03",
+        "price": {
+            "to_office": 670,
+            "to_home": 950
+        }
+    },
+    {
+        "code": "04",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "05",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "06",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "07",
+        "price": {
+            "to_office": 670,
+            "to_home": 950
+        }
+    },
+    {
+        "code": "08",
+        "price": {
+            "to_office": 770,
+            "to_home": 1250
+        }
+    },
+    {
+        "code": "09",
+        "price": {
+            "to_office": 470,
+            "to_home": 600
+        }
+    },
+    {
+        "code": "10",
+        "price": {
+            "to_office": 570,
+            "to_home": 750
+        }
+    },
+    {
+        "code": "11",
+        "price": {
+            "to_office": 1120,
+            "to_home": 1500
+        }
+    },
+    {
+        "code": "12",
+        "price": {
+            "to_office": 570,
+            "to_home": 900
+        }
+    },
+    {
+        "code": "13",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "14",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "15",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "16",
+        "price": {
+            "to_office": 420,
+            "to_home": 650
+        }
+    },
+    {
+        "code": "17",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "18",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "19",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "20",
+        "price": {
+            "to_office": 620,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "21",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "22",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "23",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "24",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "25",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "26",
+        "price": {
+            "to_office": 370,
+            "to_home": 500
+        }
+    },
+    {
+        "code": "27",
+        "price": {
+            "to_office": 0,
+            "to_home": 0
+        }
+    },
+    {
+        "code": "28",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "29",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "30",
+        "price": {
+            "to_office":  670,
+            "to_home": 1000
+        }
+    },
+    {
+        "code": "31",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "32",
+        "price": {
+            "to_office": 670,
+            "to_home": 1000
+        }
+    },
+    {
+        "code": "33",
+        "price": {
+            "to_office": 0,
+            "to_home": 0
+        }
+    },
+    {
+        "code": "34",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "35",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "36",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "37",
+        "price": {
+            "to_office": 0,
+            "to_home": 0
+        }
+    },
+    {
+        "code": "38",
+        "price": {
+            "to_office": 0,
+            "to_home": 750
+        }
+    },
+    {
+        "code": "39",
+        "price": {
+            "to_office": 950,
+            "to_home": 670
+        }
+    },
+    {
+        "code": "40",
+        "price": {
+            "to_office": 0,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "41",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "42",
+        "price": {
+            "to_office": 570,
+            "to_home": 800
+        }
+    },
+    {
+        "code": "43",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "44",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "45",
+        "price": {
+            "to_office": 670,
+            "to_home": 1200
+        }
+    },
+    {
+        "code": "46",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "47",
+        "price": {
+            "to_office": 670,
+            "to_home": 950
+        }
+    },
+    {
+        "code": "48",
+        "price": {
+            "to_office": 570,
+            "to_home": 850
+        }
+    },
+    {
+        "code": "49",
+        "price": {
+            "to_office": 0,
+            "to_home": 1400
+        }
+    },
+    {
+        "code": "50",
+        "price": {
+            "to_office": 0,
+            "to_home": 0
+        }
+    },
+    {
+        "code": "51",
+        "price": {
+            "to_office": 670,
+            "to_home": 950
+        }
+    },
+    {
+        "code": "52",
+        "price": {
+            "to_office": 970,
+            "to_home": 1400
+        }
+    },
+    {
+        "code": "53",
+        "price": {
+            "to_office": 0,
+            "to_home": 1600
+        }
+    },
+    {
+        "code": "54",
+        "price": {
+            "to_office": 0,
+            "to_home": 1600
+        }
+    },
+    {
+        "code": "55",
+        "price": {
+            "to_office": 670,
+            "to_home": 950
+        }
+    },
+    {
+        "code": "56",
+        "price": {
+            "to_office": 0,
+            "to_home": 0
+        }
+    },
+    {
+        "code": "57",
+        "price": {
+            "to_office": 0,
+            "to_home": 950
+        }
+    },
+    {
+        "code": "58",
+        "price": {
+            "to_office": 0,
+            "to_home": 100
+        }
+    }
+]
