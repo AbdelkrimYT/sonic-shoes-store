@@ -241,11 +241,28 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
     <script>
+    const products = [];
+
+    axios.get('https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product.json')
+        .then(response => {
+            response.data.forEach(e => {
+                products.push(e);
+            });
+        }).catch((error) => {
+            console.log(error);
+        });
+
+
     const product_query = new URLSearchParams(window.location.search);
-    console.log(product_query.get('slug'));
+    const slug = product_query.get('slug');
+    const product = products.find(p => p.slug == slug);
+
+    if (!product) {
+        alert('لم يتم العثور على المنتج');
+    }
+
     
     const states = [];
-    const products = [];
     const delivery_costs = [];
 
     let quantity = 1;
