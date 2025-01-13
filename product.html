@@ -87,16 +87,16 @@
                 <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
             </div>
             <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                     </svg>
                     <span class="sr-only">السابق</span>
                 </span>
             </button>
             <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                     </svg>
                     <span class="sr-only">التالي</span>
@@ -155,11 +155,11 @@
             <div class="mt-4">
                 <div class="mb-4 flex items-center ps-4 border border-gray-200 rounded">
                     <input id="bordered-radio-1" type="radio" value="tooffice" name="delivery-to" checked onclick="setDeliveryToOffice()" class="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-400">
-                    <label for="bordered-radio-1" class="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">توصيل للمكتب</label>
+                    <label for="bordered-radio-1" class="w-full py-4 ms-2 text-sm font-medium text-gray-900">توصيل للمكتب</label>
                 </div>
                 <div class="flex items-center ps-4 border border-gray-200 rounded">
                     <input id="" type="radio" value="tohome" name="delivery-to" class="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-400">
-                    <label for="bordered-radio-2" class="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">توصيل للمنزل</label>
+                    <label for="bordered-radio-2" class="w-full py-4 ms-2 text-sm font-medium text-gray-900">توصيل للمنزل</label>
                 </div>
             </div>
 
@@ -213,7 +213,7 @@
                 </div>
             </div>
 
-            <button type="button" class="mt-4 w-full focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2">
+            <button type="button" onclick="makeOrder()" data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="mt-4 w-full focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2">
                 تأكيد الطلب
             </button>
 
@@ -221,10 +221,29 @@
     </section>
   </main>
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-md max-h-full">
+            <div class="relative bg-white rounded-lg shadow">
+                <div class="p-4 md:p-5 text-center">
+                    <svg class="mx-auto mb-4 text-gray-400 w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>                      
+                    <h3 class="mb-5 text-lg font-normal text-gray-500">تم استقبال طلبكم بنجاح، سيتم التواصل معكم بعد قليل، شكرا لثقتكم</h3>
+                    <button data-modal-hide="popup-modal" type="button" class="text-white bg-green-400 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
+                        اغلاق
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <script>
+    const product_query = new URLSearchParams(window.location.search);
+    console.log(product_query.get('slug'));
+    
     const states = [];
     const products = [];
     const delivery_costs = [];
@@ -266,8 +285,6 @@
             console.log(error);
         });
 
-    console.log(products);
-
     document.getElementById('price').innerText = unit_price;
     document.getElementById('unit-price').innerText = unit_price;
     document.getElementById('qty').innerText = quantity;
@@ -305,7 +322,11 @@
         delivery = delivery_cost['']
     }
 
-  </script>
+    function makeOrder() {
+
+    }
+
+    </script>
 
 </body>
 </html>
