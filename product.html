@@ -252,15 +252,11 @@
             console.log(error);
         });
 
-
     const product_query = new URLSearchParams(window.location.search);
-    const slug = product_query.get('slug');
-    const product = products.find(p => p.slug == slug);
-
-    if (!product) {
-        alert('لم يتم العثور على المنتج');
-    }
-
+    const qslug = product_query.get('slug');
+    console.log(products.length, products)
+    const product = products.find(e => {});
+    console.log(products, product, qslug);
     
     const states = [];
     const delivery_costs = [];
@@ -289,15 +285,6 @@
             });
 
             return response.data;
-        }).catch((error) => {
-            console.log(error);
-        });
-
-    axios.get('https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product.json')
-        .then(response => {
-            response.data.forEach(e => {
-                products.push(e);
-            });
         }).catch((error) => {
             console.log(error);
         });
