@@ -105,61 +105,58 @@
         </div>
 
         <div class="mt-4">
-            <strong class="text-4xl text-gray-900">اسم المنتج</strong>
-            <p class="text-2xl text-gray-900">فقط بـ <span id="price">0</span>دج</p>
+            <strong id="view-name" class="text-4xl text-gray-900"></strong>
+            <p class="text-2xl text-gray-900">فقط بـ <span id="view-price"></span>دج</p>
+        </div>
+
+        <div class="rounded-sm border mt-4 p-4">
+            <div class="mb-5">
+                <label for="fullname" class="block mb-2 text-sm font-medium text-gray-900">الاسم الشخصي</label>
+                <input type="text" id="fullname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
+            </div>
+            <div class="mb-5">
+                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">رقم الهاتف</label>
+                <input type="text" id="fullname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5" maxlength="10">
+            </div>
+            <div class="mb-5">
+                <label for="view-state" class="block mb-2 text-sm font-medium text-gray-900">الولاية</label>
+                <select id="view-state" onchange="changeCommune()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
+                    <option></option>
+                </select>
+            </div>
+            <div class="mb-5">
+                <label for="view-commune" class="block mb-2 text-sm font-medium text-gray-900">البلدية</label>
+                <select id="view-commune" name="commune" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
+                </select>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <div class="mb-4 flex items-center ps-4 border border-gray-200 rounded">
+                <input id="view-to-office" type="radio" value="to-office" name="delivery-to" disabled onclick="setCostToOffice()" class="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-400">
+                <label for="view-to-office" class="w-full py-4 ms-2 text-sm font-medium text-gray-900">توصيل للمكتب</label>
+            </div>
+            <div class="flex items-center ps-4 border border-gray-200 rounded">
+                <input id="view-to-home" type="radio" value="to-home" name="delivery-to" disabled onclick="setCostToHome()" class="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-400">
+                <label for="view-to-home" class="w-full py-4 ms-2 text-sm font-medium text-gray-900">توصيل للمنزل</label>
+            </div>
         </div>
 
         <form class="mt-4">
             <div class="rounded-sm border p-4">
                 <div class="mb-5">
-                    <label for="color" class="block mb-2 text-sm font-medium text-gray-900">اللون</label>
-                    <select id="color" name="color" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
-                        <option value="أسود">أسود</option>
+                    <label for="view-color" class="block mb-2 text-sm font-medium text-gray-900">اللون</label>
+                    <select id="view-color" name="color" onchange="changeOrderColor()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
                     </select>
                 </div>
                 <div class="mb-5">
-                    <label for="size" class="block mb-2 text-sm font-medium text-gray-900">المقاس</label>
-                    <select id="size" name="size" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
-                        <option value="40">40</option>
-                        <option value="41">41</option>
+                    <label for="view-size" class="block mb-2 text-sm font-medium text-gray-900">المقاس</label>
+                    <select id="view-size" name="size" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
                     </select>
                 </div>
                 <div class=mb-5"">
                     <label for="quantity" class="block mb-2 text-sm font-medium text-gray-900">الكمية</label>
                     <input id="quantity" name="quantity" type=number min="1" value="1" onchange="changeQuantity()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
-                </div>
-            </div>
-
-            <div class="rounded-sm border mt-4 p-4">
-                <div class="mb-5">
-                    <label for="fullname" class="block mb-2 text-sm font-medium text-gray-900">الاسم الشخصي</label>
-                    <input type="text" id="fullname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
-                </div>
-                <div class="mb-5">
-                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">رقم الهاتف</label>
-                    <input type="text" id="fullname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5" maxlength="10">
-                </div>
-                <div class="mb-5">
-                    <label for="state" class="block mb-2 text-sm font-medium text-gray-900">الولاية</label>
-                    <select id="state" onchange="changeCommune()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
-                        <option></option>
-                    </select>
-                </div>
-                <div class="mb-5">
-                    <label for="commune" class="block mb-2 text-sm font-medium text-gray-900">البلدية</label>
-                    <select id="commune" name="commune" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
-                    </select>
-                </div>
-            </div>
-
-            <div class="mt-4">
-                <div class="mb-4 flex items-center ps-4 border border-gray-200 rounded">
-                    <input id="bordered-radio-1" type="radio" value="tooffice" name="delivery-to" checked onclick="setDeliveryToOffice()" class="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-400">
-                    <label for="bordered-radio-1" class="w-full py-4 ms-2 text-sm font-medium text-gray-900">توصيل للمكتب</label>
-                </div>
-                <div class="flex items-center ps-4 border border-gray-200 rounded">
-                    <input id="" type="radio" value="tohome" name="delivery-to" class="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-400">
-                    <label for="bordered-radio-2" class="w-full py-4 ms-2 text-sm font-medium text-gray-900">توصيل للمنزل</label>
                 </div>
             </div>
 
@@ -174,15 +171,14 @@
                         <li class="pb-3 sm:pb-4">
                            <div class="flex items-center space-x-4 rtl:space-x-reverse">
                               <div class="flex-1 min-w-0">
-                                 <p class="text-sm font-medium text-gray-900 truncate">
-                                    اسم المنتج
+                                 <p id="view-order-name" class="text-sm font-medium text-gray-900 truncate">
                                  </p>
                                  <p class="text-sm text-gray-500 truncate">
-                                    <span id="qty">0</span>x
+                                    <span id="view-order-quantity">1</span>x
                                  </p>
                               </div>
                               <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                                    <span id="unit-price">0</span><span>دج</span>
+                                    <span id="view-order-price"></span><span>دج</span>
                               </div>
                            </div>
                         </li>
@@ -194,7 +190,7 @@
                                   </p>
                                </div>
                                <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                                  <span id="delivery-cost">0</span><span>دج</span>
+                                  <span id="view-order-cost"></span><span>دج</span>
                                </div>
                             </div>
                          </li>
@@ -205,7 +201,7 @@
                                   <p class="text-sm font-medium text-gray-900 truncate">السعر الاجمالي</p>
                                </div>
                                <div class="inline-flex items-center text-base font-semibold text-gray-900">
-                                  <span id="total">0</span><span>دج</span>
+                                  <span id="view-total">0</span><span>دج</span>
                                </div>
                             </div>
                          </li>
@@ -213,7 +209,7 @@
                 </div>
             </div>
 
-            <button type="button" onclick="makeOrder()" data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="mt-4 w-full focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2">
+            <button id="send-order" type="button" onclick="makeOrder()" data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="mt-4 w-full focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2">
                 تأكيد الطلب
             </button>
 
@@ -237,73 +233,119 @@
         </div>
     </div>
 
+    <div id="no-product" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-md max-h-full">
+            <div class="relative bg-white rounded-lg shadow">
+                <div class="p-4 md:p-5 text-center">
+                    <svg class="mx-auto mb-4 text-gray-400 w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>                      
+                    <h3 class="mb-5 text-lg font-normal text-gray-500">اسف لم يتم العثور على المنتج الذي طلبتموه</h3>
+                    <button data-modal-hide="popup-modal" type="button" class="text-white bg-green-400 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
+                        اغلاق
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
     <script>
-    const products = [];
-
-    axios.get('https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product.json')
-        .then(response => {
-            response.data.forEach(e => {
-                products.push(e);
-            });
-        }).catch((error) => {
-            console.log(error);
-        });
-
-    const product_query = new URLSearchParams(window.location.search);
-    const qslug = product_query.get('slug');
-    console.log(products.length, products)
-    const product = products.find(e => {});
-    console.log(products, product, qslug);
+    const URL_PRODUCTS = 'https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product.json';
+    const URL_STATES = 'https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/states.json';
+    const URL_DELIVERY_COST = 'https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/delivery.json';
     
+    const products = [];
     const states = [];
-    const delivery_costs = [];
+    const delivery_cost_list = [];
 
-    let quantity = 1;
-    const unit_price = 2300;
-    let delivery_cost = {
-        "to_office": 200,
-        "to_home": 700,
+    const order = {
+        "product_name": "",
+        "quantity": 1,
+        "state": "",
+        "commene": "",
+        "cost": 0,
+        "total": 0
     };
 
-    let delivery = delivery_cost['to_office'];
+    axios.get(URL_PRODUCTS)
+    .then(response => {
 
-    let total = delivery + (unit_price * quantity);
-
-    axios.get('https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/states.json')
-        .then(response => {
-            const state_select = document.getElementById('state');
-            
-            response.data.forEach(e => {
-                let option = document.createElement('option');
-                option.value = e.code;
-                option.innerHTML = e.name;
-                state_select.appendChild(option);
-                states.push(e);
-            });
-
-            return response.data;
-        }).catch((error) => {
-            console.log(error);
+        response.data.forEach(e => {
+            products.push(e);
         });
 
-    document.getElementById('price').innerText = unit_price;
-    document.getElementById('unit-price').innerText = unit_price;
-    document.getElementById('qty').innerText = quantity;
-    document.getElementById('delivery-cost').innerText = delivery_cost['to_office'];
-    document.getElementById('total').innerText = total;
+        const urlQuery = new URLSearchParams(window.location.search);
+        const qSlug = urlQuery.get('slug');
+        const qProduct = response.data.find(e => e.slug === qSlug);
+
+        if (qProduct) {
+            
+            const product_colors = document.getElementById('view-color');
+            const product_size = document.getElementById('view-size');
+
+            qProduct.colors.forEach(e => {
+                const option = document.createElement('option');
+                option.innerText = e;
+                product_colors.appendChild(option);
+            });
+
+            qProduct.size.forEach(e => {
+                const option = document.createElement('option');
+                option.innerText = e;
+                product_size.appendChild(option);
+            });
+
+            axios.get(URL_STATES)
+            .then(response => {
+                const state_select = document.getElementById('view-state');
+                
+                response.data.forEach(e => {
+                    let option = document.createElement('option');
+                    option.value = e.code;
+                    option.innerHTML = e.name;
+                    state_select.appendChild(option);
+                    states.push(e);
+                });
+
+                return response.data;
+            }).catch(error => console.log(error));
+
+            axios.get(URL_DELIVERY_COST)
+            .then(response => {
+                response.data.forEach(e => {
+                    delivery_cost_list.push(e);
+                });
+            }).catch(error => console.log(error));
+
+            document.getElementById('view-name').innerText = qProduct.name;
+            document.getElementById('view-price').innerText = qProduct.price;
+            document.getElementById('view-order-name').innerText = qProduct.name;
+            document.getElementById('view-order-price').innerText = qProduct.price;
+        }
+
+    }).catch((error) => {
+        console.log(error);
+    });
 
     function changeCommune() {
-        const change_code = document.getElementById('state').value;
-        const commune_element = document.getElementById('commune');
+        const change_code = document.getElementById('view-state').value;
+        const commune_element = document.getElementById('view-commune');
 
         while (commune_element.length > 0)
             commune_element.remove(0);
 
         if (!change_code)
+        {
+            document.getElementById('view-to-office').disabled = true;
+            document.getElementById('view-to-home').disabled = true;
+            document.getElementById('view-to-office').checked = false;
+        document.getElementById('view-to-home').checked = false;
+        document.getElementById('view-order-cost').innerText = '';
             return;
+        }
 
         const state = states.find(e => e.code == change_code);
         
@@ -313,18 +355,66 @@
             option.innerHTML = e.name;
             commune_element.appendChild(option);
         });
+
+        order.state = state.name;
+
+        document.getElementById('view-to-office').disabled = false;
+        document.getElementById('view-to-home').disabled = false;
+
+        document.getElementById('view-to-office').checked = false;
+        document.getElementById('view-to-home').checked = false;
+        document.getElementById('view-order-cost').innerText = '';
+    }
+
+    function changeOrderColor() {
+        const color = document.getElementById('view-color').value;
+        order.color = color;
+        console.log(color);
+    }
+
+    function changeOrderSize() {
+
     }
 
     function changeQuantity() {
-        quantity = document.getElementById('quantity').value;
-        document.getElementById('qty').innerText = quantity;
-        let total = delivery + (unit_price * quantity);
-        document.getElementById('total').innerText = total;
+        order.quantity = document.getElementById('quantity').value;
+        console.log(order);
     }
 
-    function setDeliveryToOffice() {
-        delivery = delivery_cost['']
+    function changeOrderCommune() {
+
     }
+
+    function setCostToOffice() {
+        const state_code = document.getElementById('view-state').value;
+        const current_cost = delivery_cost_list.find(e => e.code == state_code).price.to_office;
+
+        if (current_cost == 0)
+        {
+            alert('شركة النقل لاتوفل خدمة الشحن للمكتب لهاذه البلدية');
+            return;
+        }
+
+        order.cost = current_cost;
+
+        document.getElementById('view-order-cost').innerText = current_cost;
+    }
+
+    function setCostToHome() {
+        const state_code = document.getElementById('view-state').value;
+        const current_cost = delivery_cost_list.find(e => e.code == state_code).price.to_home;
+        
+        if (current_cost == 0)
+        {
+            alert('شركة النقل لاتوفل خدمة الشحن للمنزل لهاذه البلدية');
+            return;
+        }
+
+        order.cost = current_cost;
+
+        document.getElementById('view-order-cost').innerText = current_cost;
+    }
+
 
     function makeOrder() {
 

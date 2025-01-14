@@ -5,7 +5,7 @@
         "slug": "armani",
         "price": 3000,
         "size": [39, 40, 41, 42, 43, 44],
-        "colors": ["أسود"],
+        "colors": ["أسود", "أبيض"],
         "images": [
             "https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/473033380_122104625816718735_8489891894849941705_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGF2jGqtuOKVpo_nXmSU9MKMlD7_JjOyYUyUPv8mM7JhevI0gs3DuWZGCgZSBMM1GIkCY1xp2tHVlo25HOTctk6&_nc_ohc=L-OgN91pf0QQ7kNvgHd0WQD&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=AEFBMCp61gUngU3je3w-UTM&oh=00_AYCluhEurspdkVuEUYUFEibnMiNPWcv828cxWJoS5mjAXw&oe=678B1148",
             "https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/473064244_122104625846718735_5439942712348042769_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGWK2S3vwyjtYIETuFsMfR2K6aVHhSzVwYrppUeFLNXBrl2lSKNIOtodMQvkJqqxQRpdZH68oLAWqESlueuMcMf&_nc_ohc=L9uQmdS0BpgQ7kNvgF4ZV4U&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=AHqhC6PlS90M6FBkr3OTyRa&oh=00_AYCicJJvISrk31HHIZZZphDAKYs44clVpYNqK-ISskNdpw&oe=678B1AC2",
