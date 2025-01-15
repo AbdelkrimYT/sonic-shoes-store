@@ -233,20 +233,24 @@
     const URL_PRODUCTS = 'https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product.json';
     const URL_STATES = 'https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/states.json';
     const URL_DELIVERY_COST = 'https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/delivery.json';
-    
+    const URL_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSd1Btg2sWkCvNq8kbs1qIMVOxAL356cJy3LeyjHIvdXlNcn4Q/formResponse';
+
     const products = [];
     const states = [];
     const delivery_cost_list = [];
-
     const order = {
         "customer_name": "",
         "customer_phone": "",
         "product_name": "",
+        "product_color": "",
+        "product_size": "",
+        "product_price": "",
         "quantity": 1,
         "state": "",
         "commene": "",
         "cost": 0,
-        "total": 0
+        "total": 0,
+        "to": ""
     };
 
     axios.get(URL_PRODUCTS)
@@ -299,8 +303,9 @@
             });
 
             order.product_name = qProduct.name;
-            order.price = qProduct.price;
-            order.total = order.quantity * order.price;
+            order.product_price = qProduct.price;
+            order.total = order.quantity * order.product_price;
+            order.product_color = qProduct.colors[0];
 
             document.getElementById('view-name').innerText = qProduct.name;
             document.getElementById('view-price').innerText = qProduct.price;
@@ -342,8 +347,8 @@
             document.getElementById('view-to-office').disabled = true;
             document.getElementById('view-to-home').disabled = true;
             document.getElementById('view-to-office').checked = false;
-        document.getElementById('view-to-home').checked = false;
-        document.getElementById('view-order-cost').innerText = '';
+            document.getElementById('view-to-home').checked = false;
+            document.getElementById('view-order-cost').innerText = '';
             return;
         }
 
@@ -373,17 +378,17 @@
 
     function changeOrderColor() {
         const color = document.getElementById('view-color').value;
-        order.color = color;
+        order.product_color = color;
     }
 
     function changeOrderSize() {
         const size = document.getElementById('view-size').value;
-        order.size = size;
+        order.product_size = size;
     }
 
     function changeQuantity() {
         order.quantity = document.getElementById('quantity').value;
-        order.total = (order.quantity * order.price) + order.cost;
+        order.total = (order.quantity * order.product_price) + order.cost;
 
         document.getElementById('view-order-quantity').innerText = order.quantity;
         document.getElementById('view-order-total').innerText = order.total;
@@ -399,8 +404,9 @@
             return;
         }
 
+        order.to = '%D8%AA%D9%88%D8%B5%D9%8A%D9%84+%D9%84%D9%84%D9%85%D9%83%D8%AA%D8%A8';
         order.cost = current_cost;
-        order.total = (order.quantity * order.price) + order.cost;
+        order.total = (order.quantity * order.product_price) + order.cost;
 
         document.getElementById('view-order-cost').innerText = current_cost;
         document.getElementById('view-order-total').innerText = order.total;
@@ -416,8 +422,9 @@
             return;
         }
 
+        order.to = '%D8%AA%D9%88%D8%B5%D9%8A%D9%84+%D9%84%D9%84%D9%85%D9%86%D8%B2%D9%84';
         order.cost = current_cost;
-        order.total = (order.quantity * order.price) + order.cost;
+        order.total = (order.quantity * order.product_price) + order.cost;
 
         document.getElementById('view-order-cost').innerText = current_cost;
         document.getElementById('view-order-total').innerText = order.total;
@@ -425,6 +432,33 @@
 
 
     function makeOrder() {
+        const ct = new Date();
+
+        axios.post(URL_FORM, {
+            "entry.741744750": order.product_name,
+            "entry.2038801244": order.product_size,
+            "entry.1927511479": order.product_color,
+            "entry.1458469380": order.quantity,
+            "entry.1459956372": order.product_price,
+            "entry.1717822571": order.customer_name,
+            "entry.1790090819": order.customer_phone,
+            "entry.2021586731": order.state,
+            "entry.811200625": order.commene,
+            "entry.11311045": order.cost,
+            "entry.2003454375": order.to,
+            "submissionTimestamp": ct.getTime()
+        }, {
+            headers: {
+                'Host': 'docs.google.com',
+                'Origin': 'https://docs.google.com',
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                'Accept-Encoding': 'gzip, deflate, br'
+            }
+        })
+        .then(response => {
+            console.log(response);
+        }).catch(error => console.log(error));
         console.log(order);
     }
 
