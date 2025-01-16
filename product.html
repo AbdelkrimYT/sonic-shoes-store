@@ -202,7 +202,7 @@
                 </div>
             </div>
 
-            <button id="send-order" type="submit" data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="mt-4 w-full focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2">
+            <button id="send-order" type="submit" class="mt-4 w-full focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2">
                 تأكيد الطلب
             </button>
 
@@ -210,25 +210,9 @@
             <input type="hidden" id="entry.1459956372" name="entry.1459956372">
             <input type="hidden" id="entry.11311045" name="entry.11311045">
 
-          </form>
-    </section>
-  </main>
-
-    <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative p-4 w-full max-w-md max-h-full">
-            <div class="relative bg-white rounded-lg shadow">
-                <div class="p-4 md:p-5 text-center">
-                    <svg class="mx-auto mb-4 text-gray-400 w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 20">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-                    </svg>                      
-                    <h3 class="mb-5 text-lg font-normal text-gray-500">تم استقبال طلبكم بنجاح، سيتم التواصل معكم بعد قليل، شكرا لثقتكم</h3>
-                    <button data-modal-hide="popup-modal" type="button" class="text-white bg-green-400 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
-                        اغلاق
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+            </form>
+        </section>
+    </main>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
@@ -437,39 +421,6 @@
 
         document.getElementById('view-order-cost').innerText = current_cost;
         document.getElementById('view-order-total').innerText = order.total;
-    }
-
-
-    function makeOrder() {
-        const ct = new Date();
-
-        axios.post(URL_FORM, {
-            "entry.741744750": order.product_name,
-            "entry.2038801244": order.product_size,
-            "entry.1927511479": order.product_color,
-            "entry.1458469380": order.quantity,
-            "entry.1459956372": order.product_price,
-            "entry.1717822571": order.customer_name,
-            "entry.1790090819": order.customer_phone,
-            "entry.2021586731": order.state,
-            "entry.811200625": order.commene,
-            "entry.11311045": order.cost,
-            "entry.2003454375": order.to,
-            "submissionTimestamp": ct.getTime()
-        }, {
-            headers: {
-                'Host': 'docs.google.com',
-                'Origin': 'https://docs.google.com',
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-                'Accept-Encoding': 'gzip, deflate, br'
-            }
-        })
-        .then(response => {
-            console.log(this.data);
-        }).catch(error => console.log(error));
-        
-        console.log(order);
     }
 
     </script>
