@@ -102,35 +102,35 @@
             <p class="text-2xl text-gray-900">فقط بـ <span id="view-price"></span>دج</p>
         </div>
 
-        <div class="rounded-sm border mt-4 p-4">
+        <form class="rounded-sm border mt-4 p-4" action="https://docs.google.com/forms/d/e/1FAIpQLSd1Btg2sWkCvNq8kbs1qIMVOxAL356cJy3LeyjHIvdXlNcn4Q/formResponse" method="post">
             <div class="mb-5">
                 <label for="fullname" class="block mb-2 text-sm font-medium text-gray-900">الاسم الشخصي</label>
-                <input type="text" id="fullname" onchange="changeOrderCustomerName()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
+                <input type="text" id="fullname" name="entry.1717822571" onchange="changeOrderCustomerName()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
             </div>
             <div class="mb-5">
                 <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">رقم الهاتف</label>
-                <input type="text" id="phone" onchange="changeOrderCustomerPhone()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5" maxlength="10">
+                <input type="text" id="phone" name="entry.1790090819" onchange="changeOrderCustomerPhone()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5" maxlength="10">
             </div>
             <div class="mb-5">
                 <label for="view-state" class="block mb-2 text-sm font-medium text-gray-900">الولاية</label>
-                <select id="view-state" onchange="changeCommune()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
+                <select id="view-state" name="entry.2021586731" onchange="changeCommune()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
                     <option></option>
                 </select>
             </div>
             <div class="mb-5">
                 <label for="view-commune" class="block mb-2 text-sm font-medium text-gray-900">البلدية</label>
-                <select id="view-commune" onchange="changeOrderCommune()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
+                <select id="view-commune" name="entry.811200625" onchange="changeOrderCommune()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
                 </select>
             </div>
         </div>
 
         <div class="mt-4">
             <div class="mb-4 flex items-center ps-4 border border-gray-200 rounded">
-                <input id="view-to-office" type="radio" value="to-office" name="delivery-to" disabled onclick="setCostToOffice()" class="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-400">
+                <input id="view-to-office" type="radio" value="توصيل للمكتب" name="entry.2003454375" disabled onclick="setCostToOffice()" class="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-400">
                 <label for="view-to-office" class="w-full py-4 ms-2 text-sm font-medium text-gray-900">توصيل للمكتب</label>
             </div>
             <div class="flex items-center ps-4 border border-gray-200 rounded">
-                <input id="view-to-home" type="radio" value="to-home" name="delivery-to" disabled onclick="setCostToHome()" class="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-400">
+                <input id="view-to-home" type="radio" value="توصيل للمنزل" name="entry.2003454375" disabled onclick="setCostToHome()" class="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-400">
                 <label for="view-to-home" class="w-full py-4 ms-2 text-sm font-medium text-gray-900">توصيل للمنزل</label>
             </div>
         </div>
@@ -139,17 +139,17 @@
             <div class="rounded-sm border p-4">
                 <div class="mb-5">
                     <label for="view-color" class="block mb-2 text-sm font-medium text-gray-900">اللون</label>
-                    <select id="view-color" name="color" onchange="changeOrderColor()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
+                    <select id="view-color" name="entry.1927511479" onchange="changeOrderColor()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
                     </select>
                 </div>
                 <div class="mb-5">
                     <label for="view-size" class="block mb-2 text-sm font-medium text-gray-900">المقاس</label>
-                    <select id="view-size" name="size" onchange="changeOrderSize()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
+                    <select id="view-size" name="entry.2038801244" onchange="changeOrderSize()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
                     </select>
                 </div>
                 <div class=mb-5"">
                     <label for="quantity" class="block mb-2 text-sm font-medium text-gray-900">الكمية</label>
-                    <input id="quantity" name="quantity" type=number min="1" value="1" onchange="changeQuantity()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
+                    <input id="quantity" name="entry.1458469380" type=number min="1" value="1" onchange="changeQuantity()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5">
                 </div>
             </div>
 
@@ -202,11 +202,15 @@
                 </div>
             </div>
 
-            <button id="send-order" type="button" onclick="makeOrder()" data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="mt-4 w-full focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2">
+            <button id="send-order" type="submit" data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="mt-4 w-full focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-sm text-sm px-5 py-2.5 me-2 mb-2">
                 تأكيد الطلب
             </button>
 
-          </div>
+            <input type="hidden" id="entry.741744750" name="entry.741744750">
+            <input type="hidden" id="entry.1459956372" name="entry.1459956372">
+            <input type="hidden" id="entry.11311045" name="entry.11311045">
+
+          </form>
     </section>
   </main>
 
@@ -233,20 +237,24 @@
     const URL_PRODUCTS = 'https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product.json';
     const URL_STATES = 'https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/states.json';
     const URL_DELIVERY_COST = 'https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/delivery.json';
-    
+    const URL_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSd1Btg2sWkCvNq8kbs1qIMVOxAL356cJy3LeyjHIvdXlNcn4Q/formResponse';
+
     const products = [];
     const states = [];
     const delivery_cost_list = [];
-
     const order = {
         "customer_name": "",
         "customer_phone": "",
         "product_name": "",
+        "product_color": "",
+        "product_size": "",
+        "product_price": "",
         "quantity": 1,
         "state": "",
         "commene": "",
         "cost": 0,
-        "total": 0
+        "total": 0,
+        "to": ""
     };
 
     axios.get(URL_PRODUCTS)
@@ -299,14 +307,18 @@
             });
 
             order.product_name = qProduct.name;
-            order.price = qProduct.price;
-            order.total = order.quantity * order.price;
+            order.product_price = qProduct.price;
+            order.total = order.quantity * order.product_price;
+            order.product_color = qProduct.colors[0];
 
             document.getElementById('view-name').innerText = qProduct.name;
             document.getElementById('view-price').innerText = qProduct.price;
             document.getElementById('view-order-name').innerText = qProduct.name;
             document.getElementById('view-order-price').innerText = qProduct.price;
             document.getElementById('view-order-total').innerText = order.total;
+
+            document.getElementById('entry.741744750').value = qProduct.name;
+            document.getElementById('entry.1459956372').value = qProduct.price;
 
             const images = document.getElementById('view-image').getElementsByTagName('img');
 
@@ -342,8 +354,8 @@
             document.getElementById('view-to-office').disabled = true;
             document.getElementById('view-to-home').disabled = true;
             document.getElementById('view-to-office').checked = false;
-        document.getElementById('view-to-home').checked = false;
-        document.getElementById('view-order-cost').innerText = '';
+            document.getElementById('view-to-home').checked = false;
+            document.getElementById('view-order-cost').innerText = '';
             return;
         }
 
@@ -373,17 +385,17 @@
 
     function changeOrderColor() {
         const color = document.getElementById('view-color').value;
-        order.color = color;
+        order.product_color = color;
     }
 
     function changeOrderSize() {
         const size = document.getElementById('view-size').value;
-        order.size = size;
+        order.product_size = size;
     }
 
     function changeQuantity() {
         order.quantity = document.getElementById('quantity').value;
-        order.total = (order.quantity * order.price) + order.cost;
+        order.total = (order.quantity * order.product_price) + order.cost;
 
         document.getElementById('view-order-quantity').innerText = order.quantity;
         document.getElementById('view-order-total').innerText = order.total;
@@ -399,8 +411,10 @@
             return;
         }
 
+        order.to = 'توصيل للمكتب';
         order.cost = current_cost;
-        order.total = (order.quantity * order.price) + order.cost;
+        order.total = (order.quantity * order.product_price) + order.cost;
+        document.getElementById('entry.11311045').value = current_cost;
 
         document.getElementById('view-order-cost').innerText = current_cost;
         document.getElementById('view-order-total').innerText = order.total;
@@ -416,8 +430,10 @@
             return;
         }
 
+        order.to =  'توصيل للمنزل';
         order.cost = current_cost;
-        order.total = (order.quantity * order.price) + order.cost;
+        order.total = (order.quantity * order.product_price) + order.cost;
+        document.getElementById('entry.11311045').value = current_cost;
 
         document.getElementById('view-order-cost').innerText = current_cost;
         document.getElementById('view-order-total').innerText = order.total;
@@ -425,6 +441,34 @@
 
 
     function makeOrder() {
+        const ct = new Date();
+
+        axios.post(URL_FORM, {
+            "entry.741744750": order.product_name,
+            "entry.2038801244": order.product_size,
+            "entry.1927511479": order.product_color,
+            "entry.1458469380": order.quantity,
+            "entry.1459956372": order.product_price,
+            "entry.1717822571": order.customer_name,
+            "entry.1790090819": order.customer_phone,
+            "entry.2021586731": order.state,
+            "entry.811200625": order.commene,
+            "entry.11311045": order.cost,
+            "entry.2003454375": order.to,
+            "submissionTimestamp": ct.getTime()
+        }, {
+            headers: {
+                'Host': 'docs.google.com',
+                'Origin': 'https://docs.google.com',
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                'Accept-Encoding': 'gzip, deflate, br'
+            }
+        })
+        .then(response => {
+            console.log(this.data);
+        }).catch(error => console.log(error));
+        
         console.log(order);
     }
 
