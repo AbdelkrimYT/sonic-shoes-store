@@ -19,10 +19,15 @@
         "id": 2,
         "name": "أرماني",
         "slug": "armani",
-        "price": 0,
-        "size": [],
-        "colors": [],
+        "price": 2600,
+        "size": ["أسود"],
+        "colors": [39, 40, 41, 42, 43, 44],
         "images": [
+            "https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/473552424_122106851924718735_3110957933738344149_n.jpg?stp=cp6_dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEchjQNNj1hkLgTjO9iEZyHVY6HYnr-PZFVjodiev49keyD2taG4AS3DsUKuhfUEAdaTddBF7zu_d5_KVQHBcXi&_nc_ohc=jUxe-jh72MAQ7kNvgG86mRr&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=AQmh-OZfOhM3F4TRjxG5g6Z&oh=00_AYDiZzvpxgp-C1oMLqmobSUg-TN7XbEkPCfQVPp1LeUYTg&oe=678F1B5F",
+            "https://scontent.fqfd1-1.fna.fbcdn.net/v/t39.30808-6/473418784_122106851942718735_3295331092707824821_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH1faAeObAnFLFSodfUnrImn_mZeN99JIif-Zl4330kiIBLCTcXoM4ZhceGEP9CFsr1HvAuCXDFaREPQjCJJ5hb&_nc_ohc=_TLEl5V1KxcQ7kNvgFo8VUQ&_nc_zt=23&_nc_ht=scontent.fqfd1-1.fna&_nc_gid=A6Gi25C9BlC9ysqcXGb5i8j&oh=00_AYBEVnJliWv766cDANeVh4VhGbdO4HuA63UxnHXYMnTdoA&oe=678F4CD8",
+            "https://scontent.fqfd1-1.fna.fbcdn.net/v/t39.30808-6/473322543_122106851972718735_4935588877061385806_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEr9xcfj-mJv-iQLLGpRvsgodENexgUTGah0Q17GBRMZocrX2P3jKF9Gv4ekwjq2UZzWZTV3NLVPzJvj8uK-6A8&_nc_ohc=B6trHF6Ew6wQ7kNvgFYKdcF&_nc_zt=23&_nc_ht=scontent.fqfd1-1.fna&_nc_gid=AAtsKVQMm2MDUa8zMwHXM1Y&oh=00_AYCTojjbQmol8TRfZAq4Q0OWZa5Liuzqs1WaZeUNHXk8Pw&oe=678F360C",
+            "https://scontent.fqfd1-1.fna.fbcdn.net/v/t39.30808-6/473311478_122106851984718735_3652957625372776915_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEojSDr7Z8pIzwG66JTO4Hq5j2wUw-47nLmPbBTD7jucug6deobBPfpSGt0K1RCzdmsRJ8sCqt_L4ZCAn3kFbIe&_nc_ohc=eIRmj960-RMQ7kNvgFlIU72&_nc_zt=23&_nc_ht=scontent.fqfd1-1.fna&_nc_gid=At-BgrABsV2fBQzCYhnDDDW&oh=00_AYBYBCMiHsMe2gUEIVJOAyIiqPp2KpTH3X_RME7hGRgu5Q&oe=678F41C1",
+            "https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/473552424_122106851924718735_3110957933738344149_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEchjQNNj1hkLgTjO9iEZyHVY6HYnr-PZFVjodiev49keyD2taG4AS3DsUKuhfUEAdaTddBF7zu_d5_KVQHBcXi&_nc_ohc=jUxe-jh72MAQ7kNvgG86mRr&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=A7qaA0Md8O04qqlI82p0V7n&oh=00_AYBsO_6VbHShVA8s-VkyNHcOwF7HREIYA6hIe5Dr-Bmj1Q&oe=678F1B5F"
         ],
         "in_stock": true
     }
