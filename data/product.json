@@ -30,5 +30,21 @@
             "https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/473552424_122106851924718735_3110957933738344149_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEchjQNNj1hkLgTjO9iEZyHVY6HYnr-PZFVjodiev49keyD2taG4AS3DsUKuhfUEAdaTddBF7zu_d5_KVQHBcXi&_nc_ohc=jUxe-jh72MAQ7kNvgG86mRr&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=A7qaA0Md8O04qqlI82p0V7n&oh=00_AYBsO_6VbHShVA8s-VkyNHcOwF7HREIYA6hIe5Dr-Bmj1Q&oe=678F1B5F"
         ],
         "in_stock": true
+    },
+	    {
+        "id": 3,
+        "name": "سكيتشرز",
+        "slug": "skichers",
+        "price": 3500,
+        "size": ["أسود", "أبيض", "بيج"],
+        "colors": [39, 40, 41, 42, 43, 44],
+        "images": [
+            "https://scontent.fqfd1-1.fna.fbcdn.net/v/t39.30808-6/473726826_122109204296718735_2568827396269869770_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGOlVmQcJAzKnshhpUsapKhr0riMZ7qWwKvSuIxnupbAoGEOAQs5htOWlWm9AQcbbmdI6fQUm9eXeWwto08vrCm&_nc_ohc=iLLUspMHbcoQ7kNvgFaoMZ8&_nc_zt=23&_nc_ht=scontent.fqfd1-1.fna&_nc_gid=A7Jv-Vxarn_Wc9-QhiojlES&oh=00_AYCdypOvl5_RFhTgFDuQEjJqO4FgXLsleCISMgQI6qZGOA&oe=679460B6",
+            "https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/473740415_122109204254718735_1706025139182918652_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEzD9FC1ut0jyZhCZK1Rzg-kBJc_IQxUlmQElz8hDFSWQjPDOb_EtjBQs6B0DgiSv7sY0pPKzBELjou2J_NSdPG&_nc_ohc=pik_PMedaP0Q7kNvgG5JF8y&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=AQl8z6vebit-4V9MKJS6WHw&oh=00_AYAIKRAilV9H-4Ew1XMwgKr6fBHeqe31f8N6dhDkUQzlJQ&oe=679488E4",
+            "https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/474460090_122109204320718735_5880594107437750448_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEF9CySlcZ8yMqtszFAdmhYMWNkSUk3IOgxY2RJSTcg6Evs5vK408G7wVtZ_PiUtfQLLlBehMeQk1d6UMJpkhrm&_nc_ohc=oR58fKx15lsQ7kNvgFk_oup&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=A8AceFFobrOYa5u7nfNLJXN&oh=00_AYBheqV9OinSqXWpWYLUMxk95wZX6k9g9ms1xfeOd4vf-Q&oe=67946FA2",
+            "https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/474464622_122109204272718735_5719182392586408856_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF5BpnBFHYgyUtz-Z7x41SrH2Og1gWth1UfY6DWBa2HVfR4Ik1B6VOfyRbv_wPQXhdKAJ0grwlOt5ddH1w7BgEa&_nc_ohc=uqcFujeQwJkQ7kNvgE1Zf8p&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=AI1rTbsNHDqkOpF1WmJ5xMz&oh=00_AYCeOC8f6nS4SPI8RlDYh5CrRHAuVbYsx7FqB7-EtvyADQ&oe=6794814A",
+            "https://scontent.fqfd1-1.fna.fbcdn.net/v/t39.30808-6/474105644_122109204056718735_662455796206241137_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG3dNB6Ya83V65l5cEUNQx6LuSm3kFq0Kcu5KbeQWrQpx1yUl9PbOPB4KKngtIRu7Nd_lfknmSTd6croE7LYI8x&_nc_ohc=UqXTwdqY3SYQ7kNvgGWDIb5&_nc_zt=23&_nc_ht=scontent.fqfd1-1.fna&_nc_gid=AH3iy4yAywMH_LaB38wCisj&oh=00_AYCIZ9YeJTdtJZHJqnfeYdNUkiqrlAFxFtyTcnFu31H0eg&oe=67946447"
+        ],
+        "in_stock": true
     }
 ]
