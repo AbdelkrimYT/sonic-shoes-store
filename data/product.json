@@ -31,7 +31,7 @@
         ],
         "in_stock": true
     },
-	    {
+	{
         "id": 3,
         "name": "سكيتشرز",
         "slug": "skichers",
@@ -46,5 +46,21 @@
             "https://scontent.fqfd1-1.fna.fbcdn.net/v/t39.30808-6/474105644_122109204056718735_662455796206241137_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG3dNB6Ya83V65l5cEUNQx6LuSm3kFq0Kcu5KbeQWrQpx1yUl9PbOPB4KKngtIRu7Nd_lfknmSTd6croE7LYI8x&_nc_ohc=UqXTwdqY3SYQ7kNvgGWDIb5&_nc_zt=23&_nc_ht=scontent.fqfd1-1.fna&_nc_gid=AH3iy4yAywMH_LaB38wCisj&oh=00_AYCIZ9YeJTdtJZHJqnfeYdNUkiqrlAFxFtyTcnFu31H0eg&oe=67946447"
         ],
         "in_stock": true
-    }
+    },
+	{
+		"id": 4,
+        "name": "كلاسيك سبور",
+        "slug": "classic-sport",
+        "price": 2500,
+        "size": ["أسود", "أبيض", "بيج"],
+        "colors": [39, 40, 41, 42, 43, 44],
+        "images": [
+            "https://scontent.fqfd1-1.fna.fbcdn.net/v/t39.30808-6/473383749_122109570452718735_6492173618035962392_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFgFFTokUIGpm2i3ppUKr29b9XRi15I9oZv1dGLXkj2htrv6YH1LNsgeJvUEX1W_cWEFnkSJKeTuMH5TQ6_hcsy&_nc_ohc=QkgW4IuOazoQ7kNvgHXjdvA&_nc_zt=23&_nc_ht=scontent.fqfd1-1.fna&_nc_gid=AOIfDX8zqsHRYq90y0TCNSG&oh=00_AYDhL_CoGQ7XxZ6vLtesxnK3to8nUS5LdQxmLGvskQGrVg&oe=6796E7AC",
+			"https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/474591126_122109570524718735_6375244495146824400_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEYZqfthrPTTYpBJqeVT5goAAj40eqtrVEACPjR6q2tUYUai5lSIvKZ7AYSV7pV-SvBwIiPWK08K0-dwKnIAnJS&_nc_ohc=tmScav_mLVAQ7kNvgEjWMV9&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=A0xpwVgTwgQJVTM4WXDIWxH&oh=00_AYC_SkTLeRpaILqBBee6zwRqyLWW8vt2WomONtr7QjZwGQ&oe=6796DF6A",
+			"https://scontent.fqfd1-1.fna.fbcdn.net/v/t39.30808-6/474114815_122109570464718735_3244718612618810694_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGM-sDkLOXmDil7gGcp79SL0vIKuHcwQuPS8gq4dzBC47Q9r20w7PY9oFemXiP0llC-HEgAcjBZB53qCTnmjafI&_nc_ohc=DH66wCFS5bsQ7kNvgHhArq9&_nc_zt=23&_nc_ht=scontent.fqfd1-1.fna&_nc_gid=ASw04jLIEityN9mBrNkyAzX&oh=00_AYAk0DD7_W7fqabJ9piHxoI2GqOfbUWT0-DeKiYM49n_xQ&oe=6796FC1B",
+			"https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/473579348_122109570500718735_385610094792057991_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGFl6Oyd23cQ_aB685lQ0PZwTeaJGNOSFTBN5okY05IVF6iZ9nRUS5htCSLnWwXep8jL7raB4LFnKpbNAo6EnD8&_nc_ohc=SJjxPNH-gmsQ7kNvgHV1Hd4&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=A2dd2yAsSMRnPgnKlZrtJRD&oh=00_AYBb8qjfJYssJLAWewjyYyFIdxsJo_ZTUshKAC35TLjb8Q&oe=6796DE1E",
+			"https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/474494011_122109570428718735_1004639322840281901_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHcy6zdYD5ytZWaTuBHwPhbZYXnkWTRSNxlheeRZNFI3DZeccXbb-w-ZXjfwhhb14Vs6Jy4pp4xroP4AE2b2Fmw&_nc_ohc=F7KC2NyXVSoQ7kNvgELmnG-&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=Ah_o2lxynt_4LVJmjsO7FeU&oh=00_AYBGxa1WbgnAJI4Ess8MdBVwxuCc6Wb2XO2-inCDy0opeA&oe=67970173"
+        ],
+        "in_stock": true
+	}
 ]
