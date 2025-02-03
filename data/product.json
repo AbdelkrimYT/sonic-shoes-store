@@ -63,7 +63,7 @@
         ],
         "in_stock": true
 	},
-	{
+    {
 		"id": 5,
         "name": "ماكوين",
         "slug": "mcqueen",
@@ -71,12 +71,12 @@
         "size": ["أسود", "أبيض"],
         "colors": [39, 40, 41, 42, 43],
         "images": [
-			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_4CC50.jpg",
-			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_A5B4C.jpg",
-			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_F3ED0.jpg",
-			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_1A8AE.jpg",
-			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_20ACF.jpg",
+            "https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_4CC50.jpg",
+            "https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_A5B4C.jpg",
+            "https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_F3ED0.jpg",
+            "https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_1A8AE.jpg",
+            "https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_20ACF.jpg"
         ],
         "in_stock": true
-	}
+    }
 ]
