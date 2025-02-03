@@ -62,5 +62,21 @@
 			"https://scontent.fqfd1-2.fna.fbcdn.net/v/t39.30808-6/474494011_122109570428718735_1004639322840281901_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHcy6zdYD5ytZWaTuBHwPhbZYXnkWTRSNxlheeRZNFI3DZeccXbb-w-ZXjfwhhb14Vs6Jy4pp4xroP4AE2b2Fmw&_nc_ohc=F7KC2NyXVSoQ7kNvgELmnG-&_nc_zt=23&_nc_ht=scontent.fqfd1-2.fna&_nc_gid=Ah_o2lxynt_4LVJmjsO7FeU&oh=00_AYBGxa1WbgnAJI4Ess8MdBVwxuCc6Wb2XO2-inCDy0opeA&oe=67970173"
         ],
         "in_stock": true
+	},
+	{
+		"id": 5,
+        "name": "ماكوين",
+        "slug": "mcqueen",
+        "price": 2500,
+        "size": ["أسود", "أبيض"],
+        "colors": [39, 40, 41, 42, 43, 44],
+        "images": [
+			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/armani/IMG_4CC50.jpg",
+			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/armani/IMG_A5B4C.jpg",
+			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/armani/IMG_F3ED0.jpg",
+			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/armani/IMG_1A8AE.jpg",
+			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/armani/IMG_20ACF.jpg",
+        ],
+        "in_stock": true
 	}
 ]
