@@ -69,7 +69,7 @@
         "slug": "mcqueen",
         "price": 2500,
         "size": ["أسود", "أبيض"],
-        "colors": [39, 40, 41, 42, 43, 44],
+        "colors": [39, 40, 41, 42, 43],
         "images": [
 			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_4CC50.jpg",
 			"https://raw.githubusercontent.com/AbdelkrimYT/sonic-shoes-store/main/data/product/mcqueen/IMG_A5B4C.jpg",
